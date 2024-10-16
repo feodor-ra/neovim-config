@@ -66,10 +66,6 @@ return {
                 highlights = require("nord").bufferline.highlights({ bold = true }),
             })
         end,
-        keys = {
-            { "<Tab>",   ":BufferLineCycleNext<CR>", desc = "New tab",      noremap = true, silent = true },
-            { "<S-Tab>", ":BufferLineCyclePrev<CR>", desc = "Previous tab", noremap = true, silent = true },
-        },
         enabled = is_not_vscode,
     },
     ------------ Пользовательская страница запуска -------------
@@ -143,10 +139,6 @@ return {
             view = {
                 side = "right",
             },
-        },
-        keys = {
-            { "<F3>",  ":NvimTreeToggle<CR>",   desc = "Toggle filetree",            noremap = true, silent = true },
-            { "<F15>", ":NvimTreeFindFile<CR>", desc = "Show this file in filetree", noremap = true, silent = true },
         },
         enabled = is_not_vscode,
     },
