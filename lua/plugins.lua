@@ -211,6 +211,19 @@ return {
     {
         "https://github.com/cohama/lexima.vim",
     },
+    --------------------Работа с github gist--------------------
+    {
+        "https://github.com/rawnly/gist.nvim",
+        dependencies = {
+            {
+                "https://github.com/samjwill/nvim-unception",
+                lazy = false,
+                init = function() vim.g.unception_block_while_host_edits = true end
+            }
+        },
+        cmd = { "GistCreate", "GistCreateFromFile", "GistsList" },
+        config = true
+    },
     ------------------------------------------------------------
     ---------------------- Работа с кодом ----------------------
     ------------------------------------------------------------
